@@ -1,8 +1,8 @@
-import appAuths from "./auths.routes";
+import appAuths from "./login.routes";
 import express from "express"
 
 const appAPI = express()
 
-appAPI.use('/api', appAuths)
+appAPI.use('/template', appAuths)
 
 export default appAPI
