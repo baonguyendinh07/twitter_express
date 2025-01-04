@@ -1,13 +1,11 @@
 import express, { Router } from 'express'
+import { loginValidator } from '~/middlewares/users.middleware'
+import UserController from '~/controllers/users.controllder'
 
 const appAuths = express()
 const authRouter = Router()
 
-authRouter.get('/test', (req, res) => {
-    res.json({
-        'hello': 'Hello World - Test'
-    })
-})
+authRouter.post('/login', loginValidator, UserController.login)
 
 appAuths.use('/auths', authRouter)
 
