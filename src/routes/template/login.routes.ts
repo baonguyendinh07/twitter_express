@@ -4,9 +4,9 @@ const appLogin = express()
 const loginRouter = Router()
 
 loginRouter.get('/forgot-password', (req, res) => {
-    res.json({
-        'login': 'Forgot password'
-    })
+  res.json({
+    login: 'Forgot password'
+  })
 })
 
 appLogin.use('/login', loginRouter)
