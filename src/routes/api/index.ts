@@ -1,5 +1,5 @@
-import appAuths from "./auths.routes";
-import express from "express"
+import appAuths from './auths.routes'
+import express from 'express'
 
 const appAPI = express()
 

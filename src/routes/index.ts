@@ -1,6 +1,6 @@
-import express from "express"
-import appAPI from "./api"
-import appLogin from "./template"
+import express from 'express'
+import appAPI from './api'
+import appLogin from './template'
 
 const app = express()
 
